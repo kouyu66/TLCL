@@ -65,8 +65,7 @@ functions in later chapters, but for now, just be aware that they exist.
 这一类程序可以是用诸如 C 和 C++语言写成的程序编译的二进制文件,
 也可以是由诸如shell，perl，python，ruby等等脚本语言写成的程序 。
 
-2. 是一个内建于 shell 自身的命令。bash 支持若干命令，内部叫做 shell 内部命令
-(builtins)。例如，cd 命令，就是一个 shell 内部命令。
+2. 是一个内建于 shell 自身的命令。bash支持的一系列自带的命令叫做内部命令，。例如，cd 命令，就是一个 shell 内部命令。
 
 3. 是一个 shell 函数。这些是小规模的 shell 脚本，它们混合到环境变量中。
 在后续的章节里，我们将讨论配置环境变量以及书写 shell 函数。但是现在，
@@ -79,7 +78,7 @@ functions in later chapters, but for now, just be aware that they exist.
 It is often useful to know exactly which of the four kinds of commands is being used and
 Linux provides a couple of ways to find out.
 
-这经常很有用，能确切地知道正在使用四类命令中的哪一类。Linux 提供了一对方法来
+能确切地知道正在使用的命令是四类命令中的哪一类通常是很有用的。Linux 提供了一些方法来
 弄明白命令类型。
 
 ### type － 显示命令的类型
@@ -430,8 +429,7 @@ info 文件包含超级链接，它可以让你从一个结点跳到另一个结
 To invoke info, type “info” followed optionally by the name of a program. Below is a
 table of commands used to control the reader while displaying an info page:
 
-输入"info"，接着输入程序名称，启动 info。下表中的命令，当显示一个 info 页面时，
-用来控制阅读器。
+输入"info"，接着输入程序名称，启动 info。打开一个info页面时，可以通过下表的命令来控制阅读器。
 
 <table class="multi">
 <caption class="cap">Tbale 6-2: info Commands</caption>
@@ -580,7 +578,7 @@ command. Let's try “test”. Before we do that, it would be a good idea to fin
 name “test” is already being used. To find out, we can use the type command again:
 
 正如我们看到的，我们在一行上联合了三个命令。首先更改目录到/usr，然后列出目录
-内容，最后回到原始目录（用命令"cd -"）,结束在开始的地方。现在，通过 alias 命令
+内容，最后回到原始目录（用命令"cd -"）。现在，通过 alias 命令
 把这一串命令转变为一个命令。我们要做的第一件事就是为我们的新命令构想一个名字。
 比方说"test"。在使用"test"之前，查明是否"test"命令名已经存在系统中，是个很不错
 的主意。为了查清此事，可以使用 type 命令：
@@ -674,7 +672,7 @@ Now that we have learned how to find the documentation for commands, go and look
 the documentation for all the commands we have encountered so far. Study what
 additional options are available and try them out!
 
-既然我们已经学习了怎样找到命令的帮助文档，那就试着查阅，到目前为止，我们学到的所有
+既然我们已经学习了怎样找到命令的帮助文档，那就试着查阅目前为止我们接触到的所有
 命令的文档。学习命令其它可用的选项，练习一下！
 
 ### 拓展阅读
